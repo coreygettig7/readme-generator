@@ -58,7 +58,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributions',
+        name: 'contribution',
         message: 'How can others contribute to your project? (Required)',
         validate: howToHelp => {
             if (howToHelp) {

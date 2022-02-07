@@ -13,7 +13,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
-  - [Additional Info](#additional-info)
+  - [Contact](#contact)
 
   ## Description:
   ${data.description}
@@ -33,7 +33,7 @@ function generateMarkdown(data) {
   ## Testing:
   ${data.test}
 
-  ## Contact Information:
+  ## Contact:
   - Email: [${data.email}](sendto:user@example.com)
   - Github: [${data.github}](https://github.com/${data.github})
 `;
