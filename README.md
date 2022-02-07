@@ -16,7 +16,7 @@
   A command line application that helps a user generate a high quality README.md file by answering some simple questions. 
 
   ## Demonstration:
-  ![Demo Video](https://youtu.be/Oet44Znh6qg)
+  [Demo Video](https://youtu.be/Oet44Znh6qg)
 
   ![Screenshot](https://raw.github.com/coreygettig7/readme-generator/main/media/demoReadme.png)
 
