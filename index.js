@@ -5,7 +5,7 @@ const fs = require('fs');
 const askQuestions = [
     {
         type: 'input',
-        name: 'Project title',
+        name: 'project-title',
         message: 'What is the name of your project? (Required)',
         validate: titleInput => {
             if (titleInput) {
@@ -18,7 +18,7 @@ const askQuestions = [
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Please provide a description of your project. (Required)',
         validate: projDesc => {
             if (projDesc) {
@@ -31,7 +31,7 @@ const askQuestions = [
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'Please provide any necessary installation instructions for the project',
         validate: instructions => {
             if (instructions) {
@@ -44,7 +44,7 @@ const askQuestions = [
     },
     {
         type: 'input',
-        name: 'Usage Info',
+        name: 'usage',
         message: 'Please provide instructions on how to use the application',
         validate: usageInfo => {
             if (usageInfo) {
@@ -57,7 +57,7 @@ const askQuestions = [
     },
     {
         type: 'input',
-        name: 'Contributions',
+        name: 'contributions',
         message: 'How can others contribute to your project? (Required)',
         validate: howToHelp => {
             if (howToHelp) {
@@ -70,13 +70,13 @@ const askQuestions = [
     },
     {
         type: 'checkbox',
-        name: 'License',
+        name: 'license',
         message: 'What license(s) was/were used in the making of this project?',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
     {
         type: 'input',
-        name: 'Credits',
+        name: 'credits',
         message: 'Enter any names of people that contributed to the project or any necessary attributions. (Required)',
         validate: credits => {
             if (credits) {
@@ -89,13 +89,26 @@ const askQuestions = [
     },
     {
         type: 'input',
-        name: 'Questions',
+        name: 'questions',
         message: 'Please provide your email so users can contact you with any questions! (Required)',
         validate: yourEmail => {
             if (yourEmail) {
                 return true;
             } else {
                 console.log('Please provide an email so users can contact you!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please provide your GitHub username so others can contast you with questions.',
+        validate: gitHub => {
+            if (gitHub) {
+                return true;
+            } else {
+                console.log('You must enter your GitHub username');
                 return false;
             }
         }
