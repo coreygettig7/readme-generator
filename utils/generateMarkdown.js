@@ -24,12 +24,15 @@ function generateMarkdown(data) {
   ## Usage:
   ${data.usage}
 
+  ## Credits:
+  ${data.credits}
+
   ## Contribution:
   ${data.contribution}
 
   ## Testing:
   ${data.test}
-  
+
   ## Contact Information:
   - Email: [${data.email}](sendto:user@example.com)
   - Github: [${data.github}](https://github.com/${data.github})
