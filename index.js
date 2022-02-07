@@ -2,10 +2,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
-const askQuestions = [
+const questions = [
     {
         type: 'input',
-        name: 'project-title',
+        name: 'title',
         message: 'What is the name of your project? (Required)',
         validate: titleInput => {
             if (titleInput) {
@@ -117,7 +117,15 @@ const askQuestions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeToFile(fileName, data, (err) => {
+        if (err) {
+            return console.log(err);
+        }
+
+    console.log('You did it! You can now take a look at your newly generated README file!');
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
