@@ -13,22 +13,27 @@
   - [Contact](#contact)
 
   ## Description:
-  A command line application that helps a user generate a README.md file by answering questions.
+  A command line application that helps a user generate a high quality README.md file by answering some simple questions. 
+
+  ## Demonstration:
+  ![Demo Video](https://youtu.be/Oet44Znh6qg)
+
+  ![Screenshot](https://raw.github.com/coreygettig7/readme-generator/main/media/demoReadme.png)
 
   ## Installation:
-  run npm install to install necessary packages
+  Run 'npm install' to install necessary packages
 
   ## Usage:
-  run the application by typing 'node index.js' in the CLI
+  You can run the application by typing 'node index.js' in the CLI and answering the questions that you are prompted with.
 
   ## Credits:
-  Myself: Corey Gettig
+  Corey Gettig
 
   ## Contribution:
   Checkout the gitHub repository!
 
   ## Testing:
-  no testing necessary
+  No testing necessary with this application.
 
   ## Contact:
   If you have any questions, please feel free to contact me via email or my gitHub!
